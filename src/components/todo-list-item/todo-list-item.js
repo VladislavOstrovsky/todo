@@ -11,11 +11,12 @@ export default class TodoListItem extends Component {
             important, done } = this.props;
 
     let classNames = 'todo-list-item';
+    
     if (done) {
       classNames += ' done';
     }
 
-    if(important) {
+    if (important) {
       classNames += ' important';
     }
 

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import './item-status-filter.css';
 
-
 export default class ItemStatusFilter extends Component {
 
   buttons = [
@@ -20,7 +19,7 @@ export default class ItemStatusFilter extends Component {
       const clazz = isActive ? 'btn-info' : 'btn-outline-secondary'; //Устанавливаем доп. css класс, в зависимости от того, активна она или нет
       return (
         <button type="button"
-                className={`btn ${clazz}`} /* К btn добавляем clazz (btn btn-info)*/
+                className={`btn ${clazz}`}
                 key={name}
                 onClick={() => onFilterChange(name)}>
           {label}
